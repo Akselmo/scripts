@@ -84,7 +84,7 @@ QtObject {
     }
 
     function createOrJumpToJournalEntry(m, identifier) {
-        var headline = "Journal " + m.getFullYear() + ("0" + (m.getMonth()+1)).slice(-2) + ("0" + m.getDate()).slice(-2);
+        var headline = m.getFullYear() + "-" + ("0" + (m.getMonth()+1)).slice(-2) +"-"+ ("0" + m.getDate()).slice(-2);
 
         // When the configuration option "singleJournalPerDay" is not selected, and we are not creating a journal entry
         // for tomorrow, create journal entry including time.
